@@ -1,52 +1,52 @@
 [
   {
-    "categoryId": "1",
-    "name": "Technology",
-    "thumbUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
+    "id": "1",
+    "title": "Technology",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800"
   },
   {
-    "categoryId": "2",
-    "name": "Finance",
-    "thumbUrl": "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=800"
+    "id": "2",
+    "title": "Finance",
+    "imageUrl": "https://images.unsplash.com/photo-1569025690938-a00729c9e1f9?w=800"
   },
   {
-    "categoryId": "3",
-    "name": "Education",
-    "thumbUrl": "https://images.unsplash.com/photo-1584697964403-4ff6f06fa126?w=800"
+    "id": "3",
+    "title": "Education",
+    "imageUrl": "https://images.unsplash.com/photo-1584697964403-4ff6f06fa126?w=800"
   },
   {
-    "categoryId": "4",
-    "name": "Health",
-    "thumbUrl": "https://images.unsplash.com/photo-1588776814546-ec7c13f23f17?w=800"
+    "id": "4",
+    "title": "Health",
+    "imageUrl": "https://images.unsplash.com/photo-1588776814546-ec7c13f23f17?w=800"
   },
   {
-    "categoryId": "5",
-    "name": "Travel",
-    "thumbUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+    "id": "5",
+    "title": "Travel",
+    "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
   },
   {
-    "categoryId": "6",
-    "name": "Food",
-    "thumbUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+    "id": "6",
+    "title": "Food",
+    "imageUrl": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
   },
   {
-    "categoryId": "7",
-    "name": "Sports",
-    "thumbUrl": "https://images.unsplash.com/photo-1571019613914-85f342c1d64c?w=800"
+    "id": "7",
+    "title": "Sports",
+    "imageUrl": "https://images.unsplash.com/photo-1571019613914-85f342c1d64c?w=800"
   },
   {
-    "categoryId": "8",
-    "name": "Art",
-    "thumbUrl": "https://images.unsplash.com/photo-1526318472351-bc6c9f0d5ba3?w=800"
+    "id": "8",
+    "title": "Art",
+    "imageUrl": "https://images.unsplash.com/photo-1526318472351-bc6c9f0d5ba3?w=800"
   },
   {
-    "categoryId": "9",
-    "name": "Business",
-    "thumbUrl": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"
+    "id": "9",
+    "title": "Business",
+    "imageUrl": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"
   },
   {
-    "categoryId": "10",
-    "name": "Entertainment",
-    "thumbUrl": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=800"
+    "id": "10",
+    "title": "Entertainment",
+    "imageUrl": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=800"
   }
 ]
