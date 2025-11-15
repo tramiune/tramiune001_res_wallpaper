@@ -13,9 +13,12 @@
         "contentType": "image/jpeg"
       }
     ],
-    "category": "102",
+    "categoryId": "102",
     "isPremium": true,
-    "createdAt": 1760677055
+    "createdAt": 1760677055,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   },
   {
     "id": "1020034",
@@ -31,9 +34,12 @@
         "contentType": "image/jpeg"
       }
     ],
-    "category": "102",
+    "categoryId": "102",
     "isPremium": false,
-    "createdAt": 1762506067
+    "createdAt": 1762506067,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   },
   {
     "id": "1030004",
@@ -49,9 +55,12 @@
         "contentType": "video/mp4"
       }
     ],
-    "category": "103",
+    "categoryId": "103",
     "isPremium": false,
-    "createdAt": 1760610865
+    "createdAt": 1760610865,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   },
   {
     "id": "1010023",
@@ -67,9 +76,12 @@
         "contentType": "image/jpeg"
       }
     ],
-    "category": "101",
+    "categoryId": "101",
     "isPremium": false,
-    "createdAt": 1760676924
+    "createdAt": 1760676924,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   },
   {
     "id": "1020012",
@@ -85,8 +97,11 @@
         "contentType": "image/jpeg"
       }
     ],
-    "category": "102",
+    "categoryId": "102",
     "isPremium": false,
-    "createdAt": 1760669420
+    "createdAt": 1760669420,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   }
 ]
