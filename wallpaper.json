@@ -1,0 +1,107 @@
+[
+  {
+    "id": "1020013",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/b9472bb1-5faf-4cce-943e-d7052f2b09f8_30.mp4",
+        "name": "30.mp4",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/7d39c926-4c9c-4658-bb35-a6cc30727cbe_30.jpg",
+        "name": "30.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "102",
+    "isPremium": true,
+    "createdAt": 1760677055,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  },
+  {
+    "id": "1020034",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/245c54cd-8572-4ae2-bdd0-f3a30797e973_naruto_2.mp4",
+        "name": "naruto_2.mp4",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/5ac0c5f8-f611-4749-a8a9-380c75f9237e_naruto_2.jpg",
+        "name": "naruto_2.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "102",
+    "isPremium": false,
+    "createdAt": 1762506067,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  },
+  {
+    "id": "1030004",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/c303e402-649f-4b9c-a75a-911edb43ff74_naruto.jpg",
+        "name": "naruto.jpg",
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/2d2e054d-dc6f-45cf-a56d-f10d6ce677cd_naruto.mp4",
+        "name": "naruto.mp4",
+        "contentType": "video/mp4"
+      }
+    ],
+    "categoryId": "103",
+    "isPremium": false,
+    "createdAt": 1760610865,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  },
+  {
+    "id": "1010023",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/6a88e744-3834-4c22-8706-199ceb3bb856_31.mp4",
+        "name": "31.mp4",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/eb1e3b67-e552-4038-8138-9329e4f1113e_31.jpg",
+        "name": "31.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "101",
+    "isPremium": false,
+    "createdAt": 1760676924,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  },
+  {
+    "id": "1020012",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/28ee4ab7-d654-44bc-be92-60a4038db813_830_450x800.mp4",
+        "name": "830_450x800.mp4",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/f63b62c1-d9f6-4863-89f9-009d66b7bc61_830_450x800.jpg",
+        "name": "830_450x800.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "102",
+    "isPremium": false,
+    "createdAt": 1760669420,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  }
+]
