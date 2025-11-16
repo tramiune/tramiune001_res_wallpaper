@@ -104,4 +104,20 @@
     "type": 0,
     "coinToUnlock": 0
   },
+    {
+    "id": "10200176",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/f63b62c1-d9f6-4863-89f9-009d66b7bc61_830_450x800.jpg",
+        "name": "830_450x800.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "102",
+    "isPremium": false,
+    "createdAt": 1760669420,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  }
 ]
