@@ -117,7 +117,7 @@
     "isPremium": false,
     "createdAt": 1760669420,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   }
 ]
