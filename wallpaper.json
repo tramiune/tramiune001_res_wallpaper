@@ -150,5 +150,26 @@
     "subType": 0,
     "type": 3,
     "coinToUnlock": 0
+  },
+    {
+    "id": "10200177436",
+    "medias": [
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/1c4a45d1-ba8e-4032-9c70-de8b8b7cea58_lock_1350x2400.jpg",
+        "name": "lock_1350x2400.jpg",
+        "contentType": "image/jpeg"
+      },
+      {
+        "url": "https://app-assets-cdn.pusilung.io/wallpaper/assets/f0bd8ef5-22eb-41ac-ac6d-bbd27ccce7ad_home_1350x2400.jpg",
+        "name": "home_1350x2400.jpg",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "102",
+    "isPremium": false,
+    "createdAt": 1760669420,
+    "subType": 0,
+    "type": 2,
+    "coinToUnlock": 0
   }
 ]
