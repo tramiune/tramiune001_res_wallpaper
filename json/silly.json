@@ -1,0 +1,25 @@
+[
+  {
+    "id": "101_silly_001",
+    "medias": [
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.mp4",
+        "name": "silly_001.mp4",
+        "thumbUrl": "",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.webp",
+        "name": "silly_001.webp",
+        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001_preview.webp",
+        "contentType": "image/webp"
+      }
+    ],
+    "categoryId": "101_silly",
+    "isPremium": true,
+    "createdAt": 1760677055,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  }
+]
