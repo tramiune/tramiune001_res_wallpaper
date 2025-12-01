@@ -1,32 +1,26 @@
 [
   {
-    "id": "102",
+    "id": "100",
     "title": "Popular",
     "imageUrl": "https://traderfinn0312-sudo.github.io/wallpaper/resources/cat_popular.webp",
     "createdAt": 1759307723
   },
   {
-    "id": "103",
+    "id": "101",
     "title": "Anime",
     "imageUrl": "https://app-assets-cdn.pusilung.io/wallpaper/categories/1271fc8a-db61-4717-8f2f-cf00eb899d7a_Anime_icon.webp",
     "createdAt": 1760608526
   },
   {
-    "id": "101",
+    "id": "102",
     "title": "Silly Smile",
     "imageUrl": "https://app-assets-cdn.pusilung.io/wallpaper/categories/3cd97264-7b37-41d2-8fd0-2d5c72517f8a_thumbnail_3.webp",
     "createdAt": 1759307537
   },
   {
-    "id": "105",
+    "id": "103",
     "title": "Animal",
     "imageUrl": "https://app-assets-cdn.pusilung.io/wallpaper/categories/eac85b8b-a719-4a28-8a8c-77016e215dfb_7727_450x800.webp",
     "createdAt": 1762490887
-  },
-  {
-    "id": "104",
-    "title": "Halloween",
-    "imageUrl": "https://app-assets-cdn.pusilung.io/wallpaper/categories/783b5799-fc89-493b-b8a7-ac2aab489699_halloween.webp",
-    "createdAt": 1760953967
   }
 ]
