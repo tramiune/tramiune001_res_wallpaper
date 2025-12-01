@@ -42,30 +42,46 @@
     "isPremium": true,
     "createdAt": 1760677056,
     "subType": 0,
-    "type": 0,
+    "type": 2,
     "coinToUnlock": 0
   },
   {
     "id": "100_popular_003",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_003.mp4",
-        "name": "silly_003.mp4",
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_6h.webp",
+        "name": "silly_002.mp4",
         "thumbUrl": "",
-        "contentType": "video/mp4"
+        "hour": "06:00",
+        "contentType": "image/webp"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_003.webp",
-        "name": "silly_003.webp",
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_12h.webp",
+        "name": "silly_002.mp4",
         "thumbUrl": "",
-        "contentType": "image/jpeg"
+        "hour": "12:00",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_18h.webp",
+        "name": "silly_002.mp4",
+        "thumbUrl": "",
+        "hour": "18:00",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_24h.webp",
+        "name": "silly_002.mp4",
+        "thumbUrl": "",
+        "hour": "24:00",
+        "contentType": "image/webp"
       }
     ],
     "categoryId": "100_popular",
     "isPremium": true,
     "createdAt": 1760677057,
     "subType": 0,
-    "type": 0,
+    "type": 3,
     "coinToUnlock": 0
   },
   {
