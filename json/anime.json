@@ -21,5 +21,28 @@
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
+  },
+  {
+    "id": "101_anime_002",
+    "medias": [
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002.mp4",
+        "name": "anime_002.mp4",
+        "thumbUrl": "",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002.webp",
+        "name": "anime_002.webp",
+        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002_preview.webp",
+        "contentType": "image/webp"
+      }
+    ],
+    "categoryId": "101_anime",
+    "isPremium": true,
+    "createdAt": 1760677055,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
   }
 ]
