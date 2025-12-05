@@ -3,15 +3,15 @@
     "id": "100_popular_001",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001.mp4",
         "name": "silly_001.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001.webp",
         "name": "silly_001.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -26,13 +26,13 @@
     "id": "100_popular_002",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/double_001_0.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/double_001_0.webp",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "contentType": "image/lock"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/double_001_1.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/double_001_1.webp",
         "name": "silly_002.webp",
         "thumbUrl": "",
         "contentType": "image/home"
@@ -49,28 +49,28 @@
     "id": "100_popular_003",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_6h.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/days_001_6h.webp",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "hour": "06:00",
         "contentType": "image/webp"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_12h.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/days_001_12h.webp",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "hour": "12:00",
         "contentType": "image/webp"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_18h.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/days_001_18h.webp",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "hour": "18:00",
         "contentType": "image/webp"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/days_001_24h.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/days_001_24h.webp",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "hour": "24:00",
@@ -88,13 +88,13 @@
     "id": "100_popular_004",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/animal_001.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal_001.mp4",
         "name": "silly_004.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/animal_001.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal_001.webp",
         "name": "silly_004.webp",
         "thumbUrl": "",
         "contentType": "image/jpeg"
@@ -111,7 +111,7 @@
     "id": "100_popular_005",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/animal_002.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal_002.webp",
         "name": "silly_005.webp",
         "thumbUrl": "",
         "contentType": "image/jpeg"
@@ -128,7 +128,7 @@
     "id": "100_popular_006",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/animal_003.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal_003.webp",
         "name": "silly_006.webp",
         "thumbUrl": "",
         "contentType": "image/jpeg"
@@ -145,15 +145,15 @@
     "id": "101_anime_001",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_001.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_001.mp4",
         "name": "anime_001.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_001.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_001.webp",
         "name": "anime_001.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_001_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_001_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -168,15 +168,15 @@
     "id": "101_anime_003",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_003.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_003.mp4",
         "name": "anime_003.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_003.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_003.webp",
         "name": "anime_003.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_003_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_003_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -191,15 +191,15 @@
     "id": "101_anime_002",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_002.mp4",
         "name": "anime_002.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_002.webp",
         "name": "anime_002.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_002_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_002_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -214,7 +214,7 @@
     "id": "101_anime_004",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_004.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_004.webp",
         "name": "anime_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -231,7 +231,7 @@
     "id": "101_anime_005",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_005.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_005.webp",
         "name": "anime_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -248,7 +248,7 @@
     "id": "101_anime_006",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_006.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_006.webp",
         "name": "anime_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -265,7 +265,7 @@
     "id": "101_anime_007",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_007.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_007.webp",
         "name": "anime_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -282,7 +282,7 @@
     "id": "101_anime_008",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime_008.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime_008.webp",
         "name": "anime_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -299,15 +299,15 @@
     "id": "102_silly_001",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001.mp4",
         "name": "silly_001.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001.webp",
         "name": "silly_001.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_001_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_001_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -322,15 +322,15 @@
     "id": "102_silly_002",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_002.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_002.mp4",
         "name": "silly_002.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_002.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_002.webp",
         "name": "silly_002.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_002_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_002_preview.webp",
         "contentType": "image/webp"
       }
     ],
@@ -345,13 +345,13 @@
     "id": "102_silly_003",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_003.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_003.mp4",
         "name": "silly_003.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_003.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_003.webp",
         "name": "silly_003.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -368,13 +368,13 @@
     "id": "102_silly_004",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_004.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_004.mp4",
         "name": "silly_004.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_004.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_004.webp",
         "name": "silly_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -391,13 +391,13 @@
     "id": "102_silly_005",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_005.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_005.mp4",
         "name": "silly_005.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_005.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_005.webp",
         "name": "silly_005.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -414,13 +414,13 @@
     "id": "102_silly_006",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_006.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_006.mp4",
         "name": "silly_004.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_006.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_006.webp",
         "name": "silly_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
@@ -437,13 +437,13 @@
     "id": "102_silly_007",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_007.mp4",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_007.mp4",
         "name": "silly_005.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly_007.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly_007.webp",
         "name": "silly_005.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
