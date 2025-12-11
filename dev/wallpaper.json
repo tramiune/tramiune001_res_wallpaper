@@ -478,5 +478,28 @@
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
+  },
+  {
+    "id": "104_couple_001",
+    "medias": [
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/couple_009_1.webp",
+        "name": "silly_004.webp",
+        "thumbUrl": "",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/couple_009_0.webp",
+        "name": "silly_004.webp",
+        "thumbUrl": "",
+        "contentType": "image/webp"
+      }
+    ],
+    "categoryId": "104_couple",
+    "isPremium": true,
+    "createdAt": 1760677235,
+    "subType": 0,
+    "type": 4,
+    "coinToUnlock": 0
   }
 ]

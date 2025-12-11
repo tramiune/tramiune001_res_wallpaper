@@ -1,5 +1,12 @@
 import java.io.File
 
+object Type {
+    const val STILL = 1
+    const val LIVE = 0
+    const val DOUBLE = 2
+    const val DAYS = 3
+    const val COUPLE = 4
+}
 
 @JvmStatic
 fun main(args: Array<String>) {
