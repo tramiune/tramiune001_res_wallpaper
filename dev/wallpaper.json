@@ -493,6 +493,12 @@
         "name": "silly_004.webp",
         "thumbUrl": "",
         "contentType": "image/webp"
+      },
+      {
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/couple_009.webp",
+        "name": "silly_004.webp",
+        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/couple_009_preview.webp",
+        "contentType": "image/preview"
       }
     ],
     "categoryId": "104_couple",
