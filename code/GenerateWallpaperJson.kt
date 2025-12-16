@@ -7,7 +7,7 @@ fun main() {
         categoryId = "101_anime",
         fileNamePrefix = "anime_",
         liveItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
-        previewItemNumbers = listOf(1, 2, 3)
+        previewItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
     )
 
     val sillyConfig = CategoryConfig(
