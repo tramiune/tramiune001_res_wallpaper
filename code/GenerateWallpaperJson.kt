@@ -37,7 +37,7 @@ fun main() {
         categoryId = "105_animal",
         fileNamePrefix = "animal_",
         liveItemNumbers = (listOf(1) + (5..15)).distinct(),
-        previewItemNumbers = listOf()
+        previewItemNumbers = (listOf(1) + (5..15)).distinct(),
     )
 
     val technology = CategoryConfig(
