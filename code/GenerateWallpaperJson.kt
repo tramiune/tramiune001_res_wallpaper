@@ -50,12 +50,44 @@ fun main() {
         previewItemNumbers = (listOf(1) + (2..12)).distinct(),
     )
 
+    val funny = CategoryConfig(
+        count = 2,
+        baseCreatedAt = 1760678000L,
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/funny/",
+        categoryId = "107_funny",
+        fileNamePrefix = "funny_",
+        liveItemNumbers = (listOf(1,2)).distinct(),
+        previewItemNumbers = (listOf(1,2)).distinct(),
+    )
+
+    val christmas = CategoryConfig(
+        count = 2,
+        baseCreatedAt = 1760678000L,
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/christmas/",
+        categoryId = "111_christmas",
+        fileNamePrefix = "christmas_",
+        liveItemNumbers = (listOf(1,2)).distinct(),
+        previewItemNumbers = (listOf(1,2)).distinct(),
+    )
+
+    val car = CategoryConfig(
+        count = 14,
+        baseCreatedAt = 1760678000L,
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/car/",
+        categoryId = "108_car",
+        fileNamePrefix = "car_",
+        liveItemNumbers = (listOf(1,2)).distinct(),
+        previewItemNumbers = (listOf(1) + (2..14)).distinct(),
+    )
+
     val allItems = mutableListOf<String>()
     allItems += generateCategoryItems(animeConfig)
     allItems += generateCategoryItems(sillyConfig)
     allItems += generateCategoryItems(superHero)
     allItems += generateCategoryItems(animal)
     allItems += generateCategoryItems(technology)
+    allItems += generateCategoryItems(funny)
+    allItems += generateCategoryItems(christmas)
 
     val finalJson = buildString {
         append("[\n")
