@@ -47,7 +47,7 @@ fun main() {
         categoryId = "106_technology",
         fileNamePrefix = "technology_",
         liveItemNumbers = (listOf(1) + (2..12)).distinct(),
-        previewItemNumbers = listOf()
+        previewItemNumbers = (listOf(1) + (2..12)).distinct(),
     )
 
     val allItems = mutableListOf<String>()
