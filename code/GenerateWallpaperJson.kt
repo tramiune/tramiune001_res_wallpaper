@@ -40,11 +40,22 @@ fun main() {
         previewItemNumbers = listOf()
     )
 
+    val technology = CategoryConfig(
+        count = 12,
+        baseCreatedAt = 1760678000L,
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/technology/",
+        categoryId = "106_technology",
+        fileNamePrefix = "technology_",
+        liveItemNumbers = (listOf(1) + (2..12)).distinct(),
+        previewItemNumbers = listOf()
+    )
+
     val allItems = mutableListOf<String>()
     allItems += generateCategoryItems(animeConfig)
     allItems += generateCategoryItems(sillyConfig)
     allItems += generateCategoryItems(superHero)
     allItems += generateCategoryItems(animal)
+    allItems += generateCategoryItems(technology)
 
     val finalJson = buildString {
         append("[\n")
