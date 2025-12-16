@@ -76,7 +76,7 @@ fun main() {
         baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/car/",
         categoryId = "108_car",
         fileNamePrefix = "car_",
-        liveItemNumbers = (listOf(1,2)).distinct(),
+        liveItemNumbers = (listOf(1) + (2..14)).distinct(),
         previewItemNumbers = (listOf(1) + (2..14)).distinct(),
     )
 
