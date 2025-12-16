@@ -1,45 +1,27 @@
 fun main() {
 
     val animeConfig = CategoryConfig(
-        count = 21,
+        count = 86,
         baseCreatedAt = 1760677055L,
         baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime/",
         categoryId = "101_anime",
         fileNamePrefix = "anime_",
-        liveItemNumbers = (listOf(
-            1,
-            2,
-            3,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15,
-            16,
-            17,
-            18,
-            19,
-            20,
-            21,
-            22
-        ) + (46..86)).distinct(),
+        liveItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
         previewItemNumbers = listOf(1, 2, 3)
     )
 
     val sillyConfig = CategoryConfig(
-        count = 18,
+        count = 24,
         baseCreatedAt = 1760678000L,
         baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly/",
         categoryId = "102_silly_smile",
         fileNamePrefix = "silly_",
-        liveItemNumbers = (listOf(1, (2..24)).distinct(),
+        liveItemNumbers = (listOf(1) + (2..24)).distinct(),
         previewItemNumbers = listOf(1, 2)
     )
 
     val superHero = CategoryConfig(
-        count = 18,
+        count = 3,
         baseCreatedAt = 1760678000L,
         baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/superHero/",
         categoryId = "103_super_hero",
@@ -49,12 +31,12 @@ fun main() {
     )
 
     val animal = CategoryConfig(
-        count = 18,
+        count = 15,
         baseCreatedAt = 1760678000L,
         baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal/",
         categoryId = "105_animal",
         fileNamePrefix = "animal_",
-        liveItemNumbers = (listOf(1, (5..15)).distinct(),
+        liveItemNumbers = (listOf(1) + (5..15)).distinct(),
         previewItemNumbers = listOf()
     )
 
@@ -62,6 +44,7 @@ fun main() {
     allItems += generateCategoryItems(animeConfig)
     allItems += generateCategoryItems(sillyConfig)
     allItems += generateCategoryItems(superHero)
+    allItems += generateCategoryItems(animal)
 
     val finalJson = buildString {
         append("[\n")
