@@ -1,0 +1,17 @@
+// anime
+    val baseUrl = "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime/"
+    val categoryId = "101_anime"
+    val fileNamePrefix = "anime_"
+
+    val liveItemNumbers = listOf(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)
+
+    val previewItemNumbers = listOf(1, 2, 4, 6, 8, 12, 16, 20) // Chỉ các item này có preview
+
+// anime
+    val baseUrl = "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime/"
+    val categoryId = "101_anime"
+    val fileNamePrefix = "anime_"
+
+    val liveItemNumbers = listOf(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)
+
+    val previewItemNumbers = listOf(1, 2, 4, 6, 8, 12, 16, 20) // Chỉ các item này có preview
