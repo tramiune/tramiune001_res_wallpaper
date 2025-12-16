@@ -28,5 +28,11 @@
     "title": "Couple",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_couple.webp",
     "createdAt": 1762490887
+  },
+  {
+    "id": "105_cat",
+    "title": "Cat",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_cat.webp",
+    "createdAt": 1762490887
   }
 ]
