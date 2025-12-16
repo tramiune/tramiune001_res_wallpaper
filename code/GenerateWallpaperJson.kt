@@ -88,6 +88,7 @@ fun main() {
     allItems += generateCategoryItems(technology)
     allItems += generateCategoryItems(funny)
     allItems += generateCategoryItems(christmas)
+    allItems += generateCategoryItems(car)
 
     val finalJson = buildString {
         append("[\n")
