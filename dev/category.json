@@ -34,5 +34,41 @@
     "title": "Cat",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_cat.webp",
     "createdAt": 1762490887
+  },
+  {
+    "id": "106_technology",
+    "title": "Technology",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_technology.webp",
+    "createdAt": 1762490887
+  },
+  {
+    "id": "107_funny",
+    "title": "Funny",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_funny.webp",
+    "createdAt": 1762490887
+  },
+  {
+    "id": "108_car",
+    "title": "Car",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_car.webp",
+    "createdAt": 1762490887
+  },
+  {
+    "id": "109_double",
+    "title": "Home - Lock Screen",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_double.webp",
+    "createdAt": 1762490887
+  },
+  {
+    "id": "110_day",
+    "title": "Day",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_day.webp",
+    "createdAt": 1762490887
+  },
+  {
+    "id": "111_christmas",
+    "title": "Christmas",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/category/cat_christmas.webp",
+    "createdAt": 1762490887
   }
 ]
