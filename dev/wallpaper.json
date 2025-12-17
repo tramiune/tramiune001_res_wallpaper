@@ -578,23 +578,6 @@
     "coinToUnlock": 0
   },
   {
-    "id": "101_anime_029",
-    "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime/anime_029.webp",
-        "name": "anime_029.webp",
-        "thumbUrl": "",
-        "contentType": "image/jpeg"
-      }
-    ],
-    "categoryId": "101_anime",
-    "isPremium": true,
-    "createdAt": 1760677083,
-    "subType": 1,
-    "type": 1,
-    "coinToUnlock": 0
-  },
-  {
     "id": "101_anime_030",
     "medias": [
       {
@@ -692,23 +675,6 @@
     "categoryId": "101_anime",
     "isPremium": true,
     "createdAt": 1760677089,
-    "subType": 1,
-    "type": 1,
-    "coinToUnlock": 0
-  },
-  {
-    "id": "101_anime_036",
-    "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime/anime_036.webp",
-        "name": "anime_036.webp",
-        "thumbUrl": "",
-        "contentType": "image/jpeg"
-      }
-    ],
-    "categoryId": "101_anime",
-    "isPremium": true,
-    "createdAt": 1760677090,
     "subType": 1,
     "type": 1,
     "coinToUnlock": 0
