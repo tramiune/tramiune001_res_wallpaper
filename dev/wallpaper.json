@@ -3046,6 +3046,29 @@
     "coinToUnlock": 0
   },
   {
+    "id": "107_funny_003",
+    "medias": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/funny/funny_003.mp4",
+        "name": "funny_002.mp4",
+        "thumbUrl": "",
+        "contentType": "video/mp4"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/funny/funny_003.webp",
+        "name": "funny_002.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/funny/funny_003_preview.webp",
+        "contentType": "image/jpeg"
+      }
+    ],
+    "categoryId": "107_funny",
+    "isPremium": true,
+    "createdAt": 1760678001,
+    "subType": 0,
+    "type": 0,
+    "coinToUnlock": 0
+  },
+  {
     "id": "111_christmas_001",
     "medias": [
       {
