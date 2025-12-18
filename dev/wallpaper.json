@@ -3675,35 +3675,18 @@
     "coinToUnlock": 0
   },
   {
-    "id": "104_couple_015",
-    "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/couple/couple_015.webp",
-        "name": "couple_015.webp",
-        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/couple/couple_015_preview.webp",
-        "contentType": "image/webp"
-      }
-    ],
-    "categoryId": "104_couple",
-    "isPremium": true,
-    "createdAt": 1760677235,
-    "subType": 0,
-    "type": 4,
-    "coinToUnlock": 0
-  },
-  {
     "id": "100_popular_001",
     "medias": [
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_030.mp4",
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_020.mp4",
         "name": "silly_001.mp4",
         "thumbUrl": "",
         "contentType": "video/mp4"
       },
       {
-        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_030.webp",
+        "url": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_020.webp",
         "name": "silly_001.webp",
-        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_030_preview.webp",
+        "thumbUrl": "https://tramiune.github.io/tramiune001_res_wallpaper/resources/silly/silly_020_preview.webp",
         "contentType": "image/webp"
       }
     ],
