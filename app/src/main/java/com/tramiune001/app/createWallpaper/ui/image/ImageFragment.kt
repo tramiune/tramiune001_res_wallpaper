@@ -6,6 +6,7 @@ import androidx.fragment.app.activityViewModels
 import com.tramiune001.app.createWallpaper.base.BaseFragmentVB
 import com.tramiune001.app.createWallpaper.databinding.FragmentImageBinding
 import com.tramiune001.app.createWallpaper.extension.collectInStarted
+import com.tramiune001.app.createWallpaper.extension.setOnDebounceClick
 import com.tramiune001.app.createWallpaper.extension.showIfNotExists
 import com.tramiune001.app.createWallpaper.ui.MainViewModel
 import com.tramiune001.app.createWallpaper.ui.dialog.DialogAddCustomWallpaper
@@ -35,7 +36,25 @@ class ImageFragment : BaseFragmentVB<FragmentImageBinding, ImageViewModel>(
 
     override fun initControl(view: View, savedInstanceState: Bundle?) {
         binding.rcvWallpaper.adapter = customizeAdapter
-        viewModel.getWallpapersFromAssets(requireContext(), "resources/${sharedViewModel.selectedCategory.id}", sharedViewModel.selectedCategory.id)
+
+        binding.apply {
+            tvOk.setOnDebounceClick {
+                viewModel.generateJson(
+                    baseCreateAt = editCreatAt.text.toString(),
+                    folderName = editFolder.text.toString(),
+                    categoryId = sharedViewModel.selectedCategory.id,
+                    fileNamePrefix = editFileNamePrefix.text.toString(),
+                    liveItem = editLiveItems.text.toString(),
+                    previewLive = editPreviewLive.text.toString(),
+                    double = editDouble.text.toString(),
+                    days = editDay.text.toString(),
+                    couple = editCouple.text.toString(),
+                    couplePreview = editCouplePreview.text.toString(),
+                    orders = editOrder.text.toString(),
+                )
+            }
+        }
+//        viewModel.getWallpapersFromAssets(requireContext(), "resources/${sharedViewModel.selectedCategory.id}", sharedViewModel.selectedCategory.id)
     }
 
     override fun listener() {

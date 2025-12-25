@@ -17,13 +17,11 @@ class HomeViewModel : BaseViewModel() {
 
 
     fun getCategoriesFromAssets(context: Context){
-        val inputStream = context.assets.open("dev/category.json")
+        val inputStream = context.assets.open("category.json")
         val json = inputStream.bufferedReader().use { it.readText() }
         val gson = Gson()
 
         val categoryListType: Type = object : TypeToken<List<Category>>() {}.type
         _categories.value = gson.fromJson(json, categoryListType)
     }
-
-
 }

@@ -15,4 +15,7 @@
     <string name="days_items">Days Items</string>
     <string name="couple_items">Couple items</string>
     <string name="couple_preview_items">Couple preview Items</string>
+    <string name="orders">Orders</string>
+    <string name="file_name_prefix">File name prefix</string>
+    <string name="live_items">Live items</string>
 </resources>
