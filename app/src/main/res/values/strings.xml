@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="content_des">content_des</string>
+    <string name="generate_json">Generate Json</string>
+    <string name="ok">Ok</string>
+    <string name="pick_wallpaper">Pick Wallpaper</string>
 </resources>

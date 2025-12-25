@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.navigation.safeargs)
+    kotlin("plugin.serialization") version "1.5.0"
 }
 
 android {
@@ -54,6 +56,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
+
     implementation(libs.timber)
 
     ksp(libs.hilt.android.compiler)
@@ -68,5 +73,7 @@ dependencies {
 
     //glide
     implementation(libs.glide)
+
+    implementation(libs.kotlinx.serialization.json)
 
 }

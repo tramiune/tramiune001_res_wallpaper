@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.tramiune001.app.createWallpaper.data.Category
-import com.tramiune001.app.createWallpaper.databinding.ItemLanguageBinding
+import com.tramiune001.app.createWallpaper.databinding.ItemCategoryBinding
 
 class CategoryAdapter(
     private val onItemClicked: (Category) -> Unit,
@@ -13,7 +13,7 @@ class CategoryAdapter(
     ListAdapter<Category, CategoryViewHolder>(CategoryDiffUtil()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryViewHolder {
-        val binding = ItemLanguageBinding.inflate(
+        val binding = ItemCategoryBinding.inflate(
             LayoutInflater.from(parent.context), parent, false
         )
         return CategoryViewHolder(binding, onItemClicked)

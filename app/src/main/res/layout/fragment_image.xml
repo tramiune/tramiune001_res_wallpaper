@@ -4,24 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".ui.home.HomeFragment">
+    android:background="@color/color_bg"
+    tools:context=".ui.image.ImageFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvCategory"
+        android:id="@+id/rcvWallpaper"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/_12sdp"
-        android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@id/tvGenerate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/padding_horizontal"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/tvOk"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_category" />
+        app:spanCount="3"
+        tools:listitem="@layout/item_customize" />
 
     <TextView
-        android:id="@+id/tvGenerate"
+        android:id="@+id/tvOk"
         style="@style/Body16Medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +38,7 @@
         android:background="@drawable/bg_language_active"
         android:gravity="center"
         android:paddingVertical="@dimen/_8sdp"
-        android:text="@string/generate_json"
+        android:text="@string/ok"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
