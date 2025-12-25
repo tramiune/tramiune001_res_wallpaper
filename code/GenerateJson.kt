@@ -1,100 +1,192 @@
 fun main() {
-    val count = 21
-    val baseCreatedAt = 1760677055L
 
-    // THAM SỐ
-    val baseUrl = "https://tramiune.github.io/tramiune001_res_wallpaper/resources/anime/"
-    val categoryId = "101_anime"
-    val fileNamePrefix = "anime_"
+    val animeConfig = CategoryConfig(
+        count = 15,
+        baseCreatedAt = 1760677055L,
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/anime/",
+        categoryId = "101_anime",
+        fileNamePrefix = "anime_",
 
-    // DANH SÁCH CÁC ITEM LÀ LIVE (type = 0) - CÓ VIDEO
-    val liveItemNumbers = listOf(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21)
+        liveItemNumbers = listOf(1, 2, 3),
+        previewItemNumbers = listOf(1, 2, 3),
 
-    // DANH SÁCH CÁC ITEM CÓ PREVIEW (thumbUrl)
-    val previewItemNumbers = listOf(1, 2, 4, 6, 8, 12, 16, 20) // Chỉ các item này có preview
+        doubleItems = listOf(5, 6),
+        daysItems = listOf(7),
 
-    val sb = StringBuilder()
-    sb.append("[\n")
+        coupleItemsPreview = listOf(10),
+        coupleItemsNoPreview = listOf(11),
 
-    for (i in 1..count) {
+        orderItems = listOf(5, 1, 10, 2, 7, 3, 4, 6, 8, 9,15,12,14,13,11)
+    )
+
+    val json = buildString {
+        append("[\n")
+        append(generateCategoryItems(animeConfig).joinToString(",\n"))
+        append("\n]")
+    }
+
+    println(json)
+}
+fun generateCategoryItems(config: CategoryConfig): List<String> {
+    val items = mutableListOf<String>()
+
+    val indexList =
+        if (config.orderItems.isNotEmpty())
+            config.orderItems
+        else
+            (1..config.count).toList()
+
+    indexList.forEachIndexed { orderIndex, i ->
         val numStr = "%03d".format(i)
-        val createdAt = baseCreatedAt + (i - 1)
-        val fullFileName = "${fileNamePrefix}$numStr"
+        val createdAt = config.baseCreatedAt + orderIndex
+        val id = "${config.categoryId}_$numStr"
 
-        // Xác định type: nếu i có trong list liveItemNumbers thì type = 0, ngược lại type = 1
-        val isLive = i in liveItemNumbers
-        val hasPreview = i in previewItemNumbers  // Kiểm tra có preview không
-        val type = if (isLive) 0 else 1
+        val type: Int
+        val medias: String
 
-        // Tạo thumbUrl: chỉ có nếu item nằm trong previewItemNumbers
-        val thumbUrl = if (hasPreview) "${baseUrl}${fullFileName}_preview.webp" else ""
-
-        // Tạo medias dựa trên type
-        val medias = if (isLive) {
-            // TYPE 0 (Live): Có cả video và image
-            """
+        when {
+            i in config.doubleItems -> {
+                type = Type.DOUBLE
+                medias = """
                 {
-                  "url": "${baseUrl}${fullFileName}.mp4",
-                  "name": "${fullFileName}.mp4",
+                  "url": "${config.baseUrl}double_${numStr}_0.webp",
+                  "name": "double_${numStr}_0.webp",
+                  "thumbUrl": "",
+                  "contentType": "image/webp"
+                },
+                {
+                  "url": "${config.baseUrl}double_${numStr}_1.webp",
+                  "name": "double_${numStr}_1.webp",
+                  "thumbUrl": "",
+                  "contentType": "image/webp"
+                }
+                """
+            }
+
+            i in config.daysItems -> {
+                type = Type.DAYS
+                val hours = listOf("06:00", "12:00", "18:00", "24:00")
+                medias = hours.joinToString(",\n") { hour ->
+                    val h = hour.substring(0, 2)
+                    """
+                    {
+                      "url": "${config.baseUrl}days_${numStr}_${h}h.webp",
+                      "name": "days_${numStr}_${h}h.webp",
+                      "thumbUrl": "",
+                      "hour": "$hour",
+                      "contentType": "image/webp"
+                    }
+                    """.trimIndent()
+                }
+            }
+
+            i in config.coupleItemsPreview || i in config.coupleItemsNoPreview -> {
+                type = Type.COUPLE
+                val hasPreview = i in config.coupleItemsPreview
+                val thumb = if (hasPreview)
+                    "${config.baseUrl}couple_${numStr}_preview.webp"
+                else ""
+
+                medias = """
+                {
+                  "url": "${config.baseUrl}couple_${numStr}.webp",
+                  "name": "couple_${numStr}.webp",
+                  "thumbUrl": "$thumb",
+                  "contentType": "image/webp"
+                }
+                """
+            }
+
+            i in config.liveItemNumbers -> {
+                type = Type.LIVE
+                val hasPreview = i in config.previewItemNumbers
+                val thumb = if (hasPreview)
+                    "${config.baseUrl}${config.fileNamePrefix}${numStr}_preview.webp"
+                else ""
+
+                medias = """
+                {
+                  "url": "${config.baseUrl}${config.fileNamePrefix}${numStr}.mp4",
+                  "name": "${config.fileNamePrefix}${numStr}.mp4",
                   "thumbUrl": "",
                   "contentType": "video/mp4"
                 },
                 {
-                  "url": "${baseUrl}${fullFileName}.webp",
-                  "name": "${fullFileName}.webp",
-                  "thumbUrl": "$thumbUrl",
-                  "contentType": "image/jpeg"
+                  "url": "${config.baseUrl}${config.fileNamePrefix}${numStr}.webp",
+                  "name": "${config.fileNamePrefix}${numStr}.webp",
+                  "thumbUrl": "$thumb",
+                  "contentType": "image/webp"
                 }
-            """
-        } else {
-            // TYPE 1 (Still): Chỉ có image
-            """
+                """
+            }
+
+            else -> {
+                type = Type.STILL
+                val hasPreview = i in config.previewItemNumbers
+                val thumb = if (hasPreview)
+                    "${config.baseUrl}${config.fileNamePrefix}${numStr}_preview.webp"
+                else ""
+
+                medias = """
                 {
-                  "url": "${baseUrl}${fullFileName}.webp",
-                  "name": "${fullFileName}.webp",
-                  "thumbUrl": "$thumbUrl",
-                  "contentType": "image/jpeg"
+                  "url": "${config.baseUrl}${config.fileNamePrefix}${numStr}.webp",
+                  "name": "${config.fileNamePrefix}${numStr}.webp",
+                  "thumbUrl": "$thumb",
+                  "contentType": "image/webp"
                 }
-            """
+                """
+            }
         }
 
-        sb.append(
-            """
-            {
-              "id": "${categoryId}_$numStr",
-              "medias": [$medias],
-              "categoryId": "$categoryId",
-              "isPremium": true,
-              "createdAt": $createdAt,
-              "subType": $type,
-              "type": $type,
-              "coinToUnlock": 0
-            }
-            """.trimIndent()
-        )
+        val itemJson = """
+        {
+          "id": "$id",
+          "medias": [$medias],
+          "categoryId": "${config.categoryId}",
+          "isPremium": true,
+          "createdAt": $createdAt,
+          "subType": 0,
+          "type": $type,
+          "coinToUnlock": 0
+        }
+        """.trimIndent()
 
-        if (i != count) sb.append(",\n")
+        items.add(itemJson)
     }
 
-    sb.append("\n]")
-
-    // In kết quả
-    println(sb.toString())
-
-    // Thống kê
-    val liveCount = liveItemNumbers.size
-    val stillCount = count - liveCount
-    val previewCount = previewItemNumbers.size
-
-    println("\n📊 THỐNG KÊ:")
-    println("   • Total items: $count")
-    println("   • Live (type=0): $liveCount items")
-    println("   • Still (type=1): $stillCount items")
-    println("   • Có preview: $previewCount items")
-    println("   • Live items: ${liveItemNumbers.sorted().joinToString(", ")}")
-    println("   • Items có preview: ${previewItemNumbers.sorted().joinToString(", ")}")
-
-    // Kiểm tra overlap: items vừa là Live vừa có preview
-    val liveWithPreview = liveItemNumbers.intersect(previewItemNumbers.toSet()).sorted()
-    println("   • Items vừa Live vừa có preview: ${if (liveWithPreview.isNotEmpty()) liveWithPreview.joinToString(", ") else "Không có"}")
+    return items
 }
+
+
+data class CategoryConfig(
+    val count: Int,
+    val baseCreatedAt: Long,
+    val baseUrl: String,
+    val categoryId: String,
+    val fileNamePrefix: String,
+
+    val liveItemNumbers: List<Int> = emptyList(),
+    val previewItemNumbers: List<Int> = emptyList(),
+
+    val doubleItems: List<Int> = emptyList(),
+    val daysItems: List<Int> = emptyList(),
+
+    val coupleItemsPreview: List<Int> = emptyList(),
+    val coupleItemsNoPreview: List<Int> = emptyList(),
+
+    // 👇 NEW
+    val orderItems: List<Int> = emptyList()
+)
+
+
+object Type {
+    const val STILL = 1
+    const val LIVE = 0
+    const val DOUBLE = 2
+    const val DAYS = 3
+    const val COUPLE = 4
+    const val ALL = 143
+}
+
+
+
