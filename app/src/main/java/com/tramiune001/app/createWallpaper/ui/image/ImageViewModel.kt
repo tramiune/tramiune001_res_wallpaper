@@ -14,12 +14,114 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.io.File
 import java.io.IOException
 
 class ImageViewModel : BaseViewModel() {
     private var _customizeUiState = MutableStateFlow(CustomizeUiState())
     var customizeUiState: StateFlow<CustomizeUiState> = _customizeUiState.asStateFlow()
+
+    fun printJson() {
+
+        val animeConfig = CategoryConfig(
+            count = 86,
+            baseCreatedAt = 1760677055L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/anime/",
+            categoryId = "101_anime",
+            fileNamePrefix = "anime_",
+            liveItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
+            previewItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
+        )
+
+        val sillyConfig = CategoryConfig(
+            count = 24,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/silly/",
+            categoryId = "102_silly_smile",
+            fileNamePrefix = "silly_",
+            liveItemNumbers = (listOf(1) + (2..24)).distinct(),
+            previewItemNumbers = listOf(1, 2)
+        )
+
+        val superHero = CategoryConfig(
+            count = 3,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/superHero/",
+            categoryId = "103_super_hero",
+            fileNamePrefix = "super_hero_",
+            liveItemNumbers = listOf(1, 2, 3),
+            previewItemNumbers = listOf()
+        )
+
+        val animal = CategoryConfig(
+            count = 15,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/animal/",
+            categoryId = "105_animal",
+            fileNamePrefix = "animal_",
+            liveItemNumbers = (listOf(1) + (5..15)).distinct(),
+            previewItemNumbers = (listOf(1) + (5..15)).distinct(),
+        )
+
+        val technology = CategoryConfig(
+            count = 12,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/technology/",
+            categoryId = "106_technology",
+            fileNamePrefix = "technology_",
+            liveItemNumbers = (listOf(1) + (2..12)).distinct(),
+            previewItemNumbers = (listOf(1) + (2..12)).distinct(),
+        )
+
+        val funny = CategoryConfig(
+            count = 2,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/funny/",
+            categoryId = "107_funny",
+            fileNamePrefix = "funny_",
+            liveItemNumbers = (listOf(1, 2)).distinct(),
+            previewItemNumbers = (listOf(1, 2)).distinct(),
+        )
+
+        val christmas = CategoryConfig(
+            count = 2,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/christmas/",
+            categoryId = "111_christmas",
+            fileNamePrefix = "christmas_",
+            liveItemNumbers = (listOf(1, 2)).distinct(),
+            previewItemNumbers = (listOf(1, 2)).distinct(),
+        )
+
+        val car = CategoryConfig(
+            count = 14,
+            baseCreatedAt = 1760678000L,
+            baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/car/",
+            categoryId = "108_car",
+            fileNamePrefix = "car_",
+            liveItemNumbers = (listOf(1) + (2..14)).distinct(),
+            previewItemNumbers = (listOf(1) + (2..14)).distinct(),
+        )
+
+        val allItems = mutableListOf<String>()
+        allItems += generateCategoryItems(animeConfig)
+        allItems += generateCategoryItems(sillyConfig)
+        allItems += generateCategoryItems(superHero)
+        allItems += generateCategoryItems(animal)
+        allItems += generateCategoryItems(technology)
+        allItems += generateCategoryItems(funny)
+        allItems += generateCategoryItems(christmas)
+        allItems += generateCategoryItems(car)
+
+        val finalJson = buildString {
+            append("[\n")
+            append(allItems.joinToString(",\n"))
+            append("\n]")
+        }
+
+        Timber.d("final json: $finalJson")
+    }
 
     // This function reads files from an assets folder and creates WallpaperItem instances
     fun getWallpapersFromAssets(context: Context, folderName: String, categoryId: String) {
