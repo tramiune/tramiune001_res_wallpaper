@@ -2,10 +2,12 @@ package com.tramiune001.app.createWallpaper.ui.image
 
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.activityViewModels
 import com.tramiune001.app.createWallpaper.base.BaseFragmentVB
 import com.tramiune001.app.createWallpaper.databinding.FragmentImageBinding
 import com.tramiune001.app.createWallpaper.extension.collectInStarted
 import com.tramiune001.app.createWallpaper.extension.showIfNotExists
+import com.tramiune001.app.createWallpaper.ui.MainViewModel
 import com.tramiune001.app.createWallpaper.ui.dialog.DialogAddCustomWallpaper
 import com.tramiune001.app.createWallpaper.ui.image.adapter.CustomizeAdapter
 import timber.log.Timber
@@ -15,6 +17,9 @@ class ImageFragment : BaseFragmentVB<FragmentImageBinding, ImageViewModel>(
 ) {
 
     override val classTypeOfViewModel: Class<ImageViewModel> = ImageViewModel::class.java
+
+    private val sharedViewModel: MainViewModel by activityViewModels()
+
     private val customizeAdapter = CustomizeAdapter(
         onAddItemClicked = {
             val dialogAddCustomWallpaper = DialogAddCustomWallpaper()
@@ -30,7 +35,7 @@ class ImageFragment : BaseFragmentVB<FragmentImageBinding, ImageViewModel>(
 
     override fun initControl(view: View, savedInstanceState: Bundle?) {
         binding.rcvWallpaper.adapter = customizeAdapter
-        viewModel.getWallpapersFromAssets(requireContext(), "popular")
+        viewModel.getWallpapersFromAssets(requireContext(), "resources/${sharedViewModel.selectedCategory.id}")
     }
 
     override fun listener() {

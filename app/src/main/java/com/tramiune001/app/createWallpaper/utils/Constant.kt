@@ -29,7 +29,7 @@ object Constant {
     const val KEY_24H_URL_3 = "${APP_NAME}key_24h_url_midnight"  // 0h
     const val DELAY_MILIS = 1500L
 
-    const val MAIL_SUPPORT = "Support@pusilung.io"
+    const val BASE_URL = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets"
     const val POLICY_LINK = "https://fansipan.hk/privacy-policy/"
     const val FEED_BACK_LINK =
         "https://docs.google.com/forms/d/e/1FAIpQLSd74p6L55FpBiwGExBWaiXLPujCDgSgh4lL6_KAr7bHApdGCA/viewform"

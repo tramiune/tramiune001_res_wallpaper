@@ -7,6 +7,7 @@ import com.tramiune001.app.createWallpaper.data.Media
 import com.tramiune001.app.createWallpaper.data.Type
 import com.tramiune001.app.createWallpaper.data.WallpaperItem
 import com.tramiune001.app.createWallpaper.ui.image.uiState.CustomizeUiState
+import com.tramiune001.app.createWallpaper.utils.Constant
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -40,8 +41,8 @@ class ImageViewModel : BaseViewModel() {
                             isPremium = false,  // Example, replace with actual logic for premium status
                             medias = listOf(
                                 Media(
-                                    "file",
-                                    "image",
+                                    "image/webp",
+                                    "${Constant.BASE_URL}/$folderName/$file",
                                     "file",
                                     "",
                                     ""
