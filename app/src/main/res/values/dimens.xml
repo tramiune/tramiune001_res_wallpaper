@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_horizontal">@dimen/_12sdp</dimen>
+    <dimen name="padding_vertical">@dimen/_12sdp</dimen>
+    <dimen name="item_distance">@dimen/_4sdp</dimen>
+</resources>

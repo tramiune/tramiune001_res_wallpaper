@@ -134,9 +134,9 @@
     "id": "100_popular_006",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/couple/couple_015.webp",
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/couple/couple_015.webp",
         "name": "couple_015.webp",
-        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/couple/couple_015_preview.webp",
+        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/couple/couple_015_preview.webp",
         "contentType": "image/webp"
       }
     ],
