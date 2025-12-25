@@ -7,6 +7,137 @@
     android:background="@color/color_bg"
     tools:context=".ui.image.ImageFragment">
 
+    <LinearLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <EditText
+            android:textColor="@color/black"
+            android:id="@+id/editCreatAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:hint="@string/create_at"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editFolder"
+            android:hint="@string/folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editFileNamePrefix"
+            android:hint="@string/folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editLiveItems"
+            android:hint="@string/folder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editPreviewLive"
+            android:hint="@string/preview_live_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editDouble"
+            android:hint="@string/double_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editDay"
+            android:hint="@string/days_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editCouple"
+            android:hint="@string/couple_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:id="@+id/editCouplePreview"
+            android:hint="@string/couple_preview_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_language_inactive"
+            android:paddingVertical="@dimen/_8sdp"
+            android:layout_marginHorizontal="@dimen/padding_horizontal"
+            android:paddingHorizontal="@dimen/_24sdp"
+            />
+
+    </LinearLayout>
+
+
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_vertical_50"
         android:layout_width="wrap_content"
@@ -24,7 +155,7 @@
         android:nestedScrollingEnabled="false"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toTopOf="@id/tvOk"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayout"
         app:spanCount="3"
         tools:listitem="@layout/item_customize" />
 

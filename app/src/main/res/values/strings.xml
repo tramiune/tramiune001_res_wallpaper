@@ -6,4 +6,13 @@
     <string name="generate_json">Generate Json</string>
     <string name="ok">Ok</string>
     <string name="pick_wallpaper">Pick Wallpaper</string>
+    <string name="create_at">Create at</string>
+    <string name="anime">101_anime/</string>
+    <string name="_1760677055l">1760677055L</string>
+    <string name="folder_name">Folder name</string>
+    <string name="double_items">Double Items</string>
+    <string name="preview_live_items">Preview Live Items</string>
+    <string name="days_items">Days Items</string>
+    <string name="couple_items">Couple items</string>
+    <string name="couple_preview_items">Couple preview Items</string>
 </resources>
