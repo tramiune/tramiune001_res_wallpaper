@@ -7,7 +7,7 @@ fun main() {
     val animeConfig = CategoryConfig(
         count = 86,
         baseCreatedAt = 1760677055L,
-        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/anime/",
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/anime/",
         categoryId = "101_anime",
         fileNamePrefix = "anime_",
         liveItemNumbers = (listOf(1, 2, 3) + (9..22) + (46..86)).distinct(),
@@ -17,7 +17,7 @@ fun main() {
     val sillyConfig = CategoryConfig(
         count = 24,
         baseCreatedAt = 1760678000L,
-        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/silly/",
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/silly/",
         categoryId = "102_silly_smile",
         fileNamePrefix = "silly_",
         liveItemNumbers = (listOf(1) + (2..24)).distinct(),
@@ -27,7 +27,7 @@ fun main() {
     val superHero = CategoryConfig(
         count = 3,
         baseCreatedAt = 1760678000L,
-        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/superHero/",
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/superHero/",
         categoryId = "103_super_hero",
         fileNamePrefix = "super_hero_",
         liveItemNumbers = listOf(1, 2, 3),
@@ -37,7 +37,7 @@ fun main() {
     val animal = CategoryConfig(
         count = 15,
         baseCreatedAt = 1760678000L,
-        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/animal/",
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/animal/",
         categoryId = "105_animal",
         fileNamePrefix = "animal_",
         liveItemNumbers = (listOf(1) + (5..15)).distinct(),
@@ -47,7 +47,7 @@ fun main() {
     val technology = CategoryConfig(
         count = 12,
         baseCreatedAt = 1760678000L,
-        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/technology/",
+        baseUrl = "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/technology/",
         categoryId = "106_technology",
         fileNamePrefix = "technology_",
         liveItemNumbers = (listOf(1) + (2..12)).distinct(),
