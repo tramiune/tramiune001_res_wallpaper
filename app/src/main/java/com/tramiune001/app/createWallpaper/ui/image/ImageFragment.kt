@@ -35,7 +35,7 @@ class ImageFragment : BaseFragmentVB<FragmentImageBinding, ImageViewModel>(
 
     override fun initControl(view: View, savedInstanceState: Bundle?) {
         binding.rcvWallpaper.adapter = customizeAdapter
-        viewModel.getWallpapersFromAssets(requireContext(), "resources/${sharedViewModel.selectedCategory.id}")
+        viewModel.getWallpapersFromAssets(requireContext(), "resources/${sharedViewModel.selectedCategory.id}", sharedViewModel.selectedCategory.id)
     }
 
     override fun listener() {

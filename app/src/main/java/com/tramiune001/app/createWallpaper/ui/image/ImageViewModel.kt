@@ -20,7 +20,7 @@ class ImageViewModel : BaseViewModel() {
     var customizeUiState: StateFlow<CustomizeUiState> = _customizeUiState.asStateFlow()
 
     // This function reads files from an assets folder and creates WallpaperItem instances
-    fun getWallpapersFromAssets(context: Context, folderName: String) {
+    fun getWallpapersFromAssets(context: Context, folderName: String, categoryId: String) {
         viewModelScope.launch(Dispatchers.IO) {
             val assetManager = context.assets
             val wallpaperItems = mutableListOf<WallpaperItem>()
@@ -37,7 +37,7 @@ class ImageViewModel : BaseViewModel() {
                     ) {
                         // Create a WallpaperItem from each file
                         val wallpaperItem = WallpaperItem(
-                            categoryId = "categoryId",  // Example, replace with actual category ID
+                            categoryId = categoryId,  // Example, replace with actual category ID
                             isPremium = false,  // Example, replace with actual logic for premium status
                             medias = listOf(
                                 Media(
