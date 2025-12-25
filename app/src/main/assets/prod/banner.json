@@ -1,0 +1,62 @@
+[
+  {
+    "categoryId": "1",
+    "bannerId": "b1",
+    "name": "Technology",
+    "url": "https://traderfinn0312-sudo.github.io/wallpaper/banner_1.png"
+  },
+  {
+    "categoryId": "2",
+    "bannerId": "b2",
+    "name": "Finance",
+    "url": "https://traderfinn0312-sudo.github.io/wallpaper/banner_1.png"
+  },
+  {
+    "categoryId": "3",
+    "bannerId": "b3",
+    "name": "Education",
+    "url": "https://images.unsplash.com/photo-1584697964403-4ff6f06fa126?w=800"
+  },
+  {
+    "categoryId": "4",
+    "bannerId": "b4",
+    "name": "Health",
+    "url": "https://images.unsplash.com/photo-1588776814546-ec7c13f23f17?w=800"
+  },
+  {
+    "categoryId": "5",
+    "bannerId": "b5",
+    "name": "Travel",
+    "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800"
+  },
+  {
+    "categoryId": "6",
+    "bannerId": "b6",
+    "name": "Food",
+    "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+  },
+  {
+    "categoryId": "7",
+    "bannerId": "b7",
+    "name": "Sports",
+    "url": "https://images.unsplash.com/photo-1571019613914-85f342c1d64c?w=800"
+  },
+  {
+    "categoryId": "8",
+    "bannerId": "b8",
+    "name": "Art",
+    "url": "https://images.unsplash.com/photo-1526318472351-bc6c9f0d5ba3?w=800"
+  },
+  {
+    "categoryId": "9",
+    "bannerId": "b9",
+    "name": "Business",
+    "url": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"
+  },
+  {
+    "categoryId": "10",
+    "bannerId": "b10",
+    "name": "Entertainment",
+    "url": "https://images.unsplash.com/photo-1497032205916-ac775f0649ae?w=800"
+  }
+]
