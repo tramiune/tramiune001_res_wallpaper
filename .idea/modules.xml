@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/resources.iml" filepath="$PROJECT_DIR$/.idea/resources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateJson.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CreateJson.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CreateJson.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CreateJson.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CreateJson.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CreateJson.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CreateJson.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CreateJson.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CreateJson.app.unitTest.iml" />
     </modules>
   </component>
 </project>
