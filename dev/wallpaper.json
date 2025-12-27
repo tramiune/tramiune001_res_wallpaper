@@ -577,12 +577,6 @@
     "id": "101_anime_065",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_065.mp4",
-        "name": "anime_065.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_065.webp",
         "name": "anime_065.webp",
         "thumbUrl": "",
@@ -593,7 +587,7 @@
     "isPremium": true,
     "createdAt": 1760677081,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
@@ -663,12 +657,6 @@
     "id": "101_anime_068",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_068.mp4",
-        "name": "anime_068.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_068.webp",
         "name": "anime_068.webp",
         "thumbUrl": "",
@@ -679,7 +667,7 @@
     "isPremium": true,
     "createdAt": 1760677085,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
@@ -903,12 +891,6 @@
     "id": "101_anime_063",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_063.mp4",
-        "name": "anime_063.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_063.webp",
         "name": "anime_063.webp",
         "thumbUrl": "",
@@ -919,7 +901,7 @@
     "isPremium": true,
     "createdAt": 1760677097,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
@@ -1326,12 +1308,6 @@
     "id": "101_anime_069",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_069.mp4",
-        "name": "anime_069.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_069.webp",
         "name": "anime_069.webp",
         "thumbUrl": "",
@@ -1342,18 +1318,12 @@
     "isPremium": true,
     "createdAt": 1760677118,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
     "id": "101_anime_062",
     "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_062.mp4",
-        "name": "anime_062.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
       {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_062.webp",
         "name": "anime_062.webp",
@@ -1365,7 +1335,7 @@
     "isPremium": true,
     "createdAt": 1760677119,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
@@ -1526,12 +1496,6 @@
     "id": "101_anime_061",
     "medias": [
       {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_061.mp4",
-        "name": "anime_061.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_061.webp",
         "name": "anime_061.webp",
         "thumbUrl": "",
@@ -1542,18 +1506,12 @@
     "isPremium": true,
     "createdAt": 1760677128,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
     "id": "101_anime_066",
     "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_066.mp4",
-        "name": "anime_066.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
       {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_066.webp",
         "name": "anime_066.webp",
@@ -1565,18 +1523,12 @@
     "isPremium": true,
     "createdAt": 1760677129,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
     "id": "101_anime_067",
     "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_067.mp4",
-        "name": "anime_067.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
       {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_067.webp",
         "name": "anime_067.webp",
@@ -1588,18 +1540,12 @@
     "isPremium": true,
     "createdAt": 1760677130,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
     "id": "101_anime_064",
     "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_064.mp4",
-        "name": "anime_064.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
       {
         "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/101_anime/anime_064.webp",
         "name": "anime_064.webp",
@@ -1611,7 +1557,7 @@
     "isPremium": true,
     "createdAt": 1760677131,
     "subType": 0,
-    "type": 0,
+    "type": 1,
     "coinToUnlock": 0
   },
   {
@@ -1747,7 +1693,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677055,
+    "createdAt": 1760677137,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1770,7 +1716,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677056,
+    "createdAt": 1760677138,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1793,7 +1739,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677057,
+    "createdAt": 1760677139,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1816,7 +1762,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677058,
+    "createdAt": 1760677140,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1839,7 +1785,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677059,
+    "createdAt": 1760677141,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1862,7 +1808,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677060,
+    "createdAt": 1760677142,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1885,7 +1831,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677061,
+    "createdAt": 1760677143,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1908,7 +1854,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677062,
+    "createdAt": 1760677144,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1931,7 +1877,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677063,
+    "createdAt": 1760677145,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1954,7 +1900,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677064,
+    "createdAt": 1760677146,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -1977,7 +1923,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677065,
+    "createdAt": 1760677147,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2000,7 +1946,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677066,
+    "createdAt": 1760677148,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2023,7 +1969,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677067,
+    "createdAt": 1760677149,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2046,7 +1992,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677068,
+    "createdAt": 1760677150,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2069,7 +2015,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677069,
+    "createdAt": 1760677151,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2092,7 +2038,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677070,
+    "createdAt": 1760677152,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2115,7 +2061,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677071,
+    "createdAt": 1760677153,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2138,7 +2084,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677072,
+    "createdAt": 1760677154,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2161,7 +2107,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677073,
+    "createdAt": 1760677155,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2184,7 +2130,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677074,
+    "createdAt": 1760677156,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2207,7 +2153,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677075,
+    "createdAt": 1760677157,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2230,7 +2176,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677076,
+    "createdAt": 1760677158,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2253,7 +2199,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677077,
+    "createdAt": 1760677159,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2276,7 +2222,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677078,
+    "createdAt": 1760677160,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
@@ -2299,7 +2245,7 @@
     ],
     "categoryId": "102_silly_smile",
     "isPremium": true,
-    "createdAt": 1760677079,
+    "createdAt": 1760677161,
     "subType": 0,
     "type": 0,
     "coinToUnlock": 0
