@@ -6,25 +6,26 @@ on:
       folder:
         description: "Folder inside resources (e.g. 101_anime)"
         required: true
-        type: string
+        default: "101_anime"
       video:
         description: "Video file name (e.g. anime_003.mp4)"
         required: true
-        type: string
+        default: "anime_003.mp4"
       start:
         description: "Start seconds (e.g. 1.2)"
         required: true
-        type: string
+        default: "0"
       end:
         description: "End seconds (e.g. 7.8)"
         required: true
-        type: string
+        default: "2.0"
       mode:
-        description: "FAST=stream copy, PRECISE=re-encode"
+        description: "FAST=stream copy, PRECISE=re-encode (enter FAST or PRECISE)"
         required: false
         default: "FAST"
-        type: choice
-        options: [FAST, PRECISE]
+
+permissions:
+  contents: write
 
 jobs:
   trim:
@@ -38,16 +39,17 @@ jobs:
       - name: Install ffmpeg
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg
+          sudo apt-get install -y ffmpeg python3
 
       - name: Trim
+        env:
+          FOLDER: ${{ inputs.folder }}
+          VIDEO: ${{ inputs.video }}
+          START: ${{ inputs.start }}
+          END: ${{ inputs.end }}
+          MODE: ${{ inputs.mode }}
         run: |
-          set -e
-          FOLDER="${{ inputs.folder }}"
-          VIDEO="${{ inputs.video }}"
-          START="${{ inputs.start }}"
-          END="${{ inputs.end }}"
-          MODE="${{ inputs.mode }}"
+          set -euo pipefail
 
           IN="resources/$FOLDER/$VIDEO"
           OUT="resources/$FOLDER/$VIDEO.trim.mp4"
@@ -57,19 +59,22 @@ jobs:
             exit 1
           fi
 
-          DUR=$(python3 - << 'PY'
+          DUR=$(python3 - <<'PY'
 import os
 s=float(os.environ["START"])
 e=float(os.environ["END"])
-print(max(0.0, e-s))
+print(e-s)
 PY
 )
-          if [ "$(python3 - << 'PY'
+          OK=$(python3 - <<'PY'
 import os
-print(1 if float(os.environ["DUR"])>0 else 0)
+d=float(os.environ["DUR"])
+print("1" if d>0 else "0")
 PY
-)" != "1" ]; then
-            echo "Invalid duration"
+          DUR="$DUR")
+
+          if [ "$OK" != "1" ]; then
+            echo "Invalid duration: start=$START end=$END dur=$DUR"
             exit 1
           fi
 
@@ -87,6 +92,6 @@ PY
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add "resources/${{ inputs.folder }}/${{ inputs.video }}"
           git commit -m "Trim ${{ inputs.folder }}/${{ inputs.video }} (${{ inputs.start }}-${{ inputs.end }})" || exit 0
           git push
