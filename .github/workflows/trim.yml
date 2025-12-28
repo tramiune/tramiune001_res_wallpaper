@@ -52,41 +52,28 @@ jobs:
           set -euo pipefail
 
           IN="resources/$FOLDER/$VIDEO"
-          OUT="resources/$FOLDER/$VIDEO.trim.mp4"
+          TMP="resources/$FOLDER/$VIDEO.trim.mp4"
 
           if [ ! -f "$IN" ]; then
             echo "Input not found: $IN"
             exit 1
           fi
 
-          DUR=$(python3 - <<'PY'
-import os
-s=float(os.environ["START"])
-e=float(os.environ["END"])
-print(e-s)
-PY
-)
-          OK=$(python3 - <<'PY'
-import os
-d=float(os.environ["DUR"])
-print("1" if d>0 else "0")
-PY
-          DUR="$DUR")
+          DUR="$(python3 -c 'import os; s=float(os.environ["START"]); e=float(os.environ["END"]); print(e-s)')"
 
-          if [ "$OK" != "1" ]; then
-            echo "Invalid duration: start=$START end=$END dur=$DUR"
-            exit 1
-          fi
+          python3 -c 'import os; d=float(os.environ["DUR"]); assert d>0, f"Invalid duration DUR={d}"' \
+            DUR="$DUR"
 
-          echo "Trimming $IN  start=$START end=$END dur=$DUR mode=$MODE"
+          echo "Trimming: $IN"
+          echo "start=$START end=$END dur=$DUR mode=$MODE"
 
           if [ "$MODE" = "FAST" ]; then
-            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c copy -avoid_negative_ts make_zero -movflags +faststart "$OUT"
+            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c copy -avoid_negative_ts make_zero -movflags +faststart "$TMP"
           else
-            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k -movflags +faststart "$OUT"
+            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k -movflags +faststart "$TMP"
           fi
 
-          mv "$OUT" "$IN"
+          mv "$TMP" "$IN"
 
       - name: Commit & push
         run: |
