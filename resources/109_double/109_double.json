@@ -1,0 +1,25 @@
+[
+  {
+    "id": "109_double_001",
+    "medias": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/109_double/double_001_0.webp",
+        "name": "double_001_0.webp",
+        "thumbUrl": "",
+        "contentType": "image/webp"
+      },
+      {
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/109_double/double_001_1.webp",
+        "name": "double_001_1.webp",
+        "thumbUrl": "",
+        "contentType": "image/webp"
+      }
+    ],
+    "categoryId": "109_double",
+    "isPremium": true,
+    "createdAt": 1766905890,
+    "subType": 0,
+    "type": 2,
+    "coinToUnlock": 0
+  }
+]
