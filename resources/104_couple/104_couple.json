@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "104_couple_001",
+    "medias": [
+      {
+        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/104_couple/couple_001.webp",
+        "name": "couple_001.webp",
+        "thumbUrl": "",
+        "contentType": "image/webp"
+      }
+    ],
+    "categoryId": "104_couple",
+    "isPremium": true,
+    "createdAt": 1766907247,
+    "subType": 0,
+    "type": 4,
+    "coinToUnlock": 0
+  }
+]
