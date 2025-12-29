@@ -6,23 +6,25 @@ on:
       folder:
         description: "Folder inside resources (e.g. 101_anime)"
         required: true
-        default: "101_anime"
+        type: string
       video:
         description: "Video file name (e.g. anime_003.mp4)"
         required: true
-        default: "anime_003.mp4"
+        type: string
       start:
         description: "Start seconds (e.g. 1.2)"
         required: true
-        default: "0"
+        type: string
       end:
         description: "End seconds (e.g. 7.8)"
         required: true
-        default: "2.0"
+        type: string
       mode:
-        description: "FAST=stream copy, PRECISE=re-encode (enter FAST or PRECISE)"
+        description: "FAST=stream copy, PRECISE=re-encode"
         required: false
-        default: "FAST"
+        default: FAST
+        type: choice
+        options: [FAST, PRECISE]
 
 permissions:
   contents: write
@@ -42,43 +44,48 @@ jobs:
           sudo apt-get install -y ffmpeg python3
 
       - name: Trim
-        env:
-          FOLDER: ${{ inputs.folder }}
-          VIDEO: ${{ inputs.video }}
-          START: ${{ inputs.start }}
-          END: ${{ inputs.end }}
-          MODE: ${{ inputs.mode }}
+        shell: bash
         run: |
           set -euo pipefail
 
-          IN="resources/$FOLDER/$VIDEO"
-          TMP="resources/$FOLDER/$VIDEO.trim.mp4"
+          FOLDER="${{ inputs.folder }}"
+          VIDEO="${{ inputs.video }}"
+          START="${{ inputs.start }}"
+          END="${{ inputs.end }}"
+          MODE="${{ inputs.mode }}"
+
+          IN="resources/${FOLDER}/${VIDEO}"
+          OUT="resources/${FOLDER}/${VIDEO}.trim.mp4"
 
           if [ ! -f "$IN" ]; then
             echo "Input not found: $IN"
             exit 1
           fi
 
-          DUR="$(python3 -c 'import os; s=float(os.environ["START"]); e=float(os.environ["END"]); print(e-s)')"
+          # Compute duration (END-START) and validate
+          DUR="$(python3 -c "s=float('$START'); e=float('$END'); d=e-s; print(d if d>0 else 0.0)")"
+          echo "Computed DUR=$DUR"
 
-          python3 -c 'import os; d=float(os.environ["DUR"]); assert d>0, f"Invalid duration DUR={d}"' \
-            DUR="$DUR"
+          python3 -c "d=float('$DUR'); import sys; sys.exit(0 if d>0 else 1)" || {
+            echo "Invalid range: start=$START end=$END (duration must be > 0)"
+            exit 1
+          }
 
-          echo "Trimming: $IN"
-          echo "start=$START end=$END dur=$DUR mode=$MODE"
+          echo "Trimming: $IN start=$START end=$END dur=$DUR mode=$MODE"
 
           if [ "$MODE" = "FAST" ]; then
-            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c copy -avoid_negative_ts make_zero -movflags +faststart "$TMP"
+            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c copy -avoid_negative_ts make_zero -movflags +faststart "$OUT"
           else
-            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k -movflags +faststart "$TMP"
+            ffmpeg -y -ss "$START" -i "$IN" -t "$DUR" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 128k -movflags +faststart "$OUT"
           fi
 
-          mv "$TMP" "$IN"
+          mv "$OUT" "$IN"
 
       - name: Commit & push
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "resources/${{ inputs.folder }}/${{ inputs.video }}"
+          git add -A
           git commit -m "Trim ${{ inputs.folder }}/${{ inputs.video }} (${{ inputs.start }}-${{ inputs.end }})" || exit 0
           git push
