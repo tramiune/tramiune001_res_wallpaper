@@ -1,28 +1,5 @@
 [
   {
-    "id": "100_popular_020",
-    "medias": [
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/100_popular/popular_020.mp4",
-        "name": "popular_020.mp4",
-        "thumbUrl": "",
-        "contentType": "video/mp4"
-      },
-      {
-        "url": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/100_popular/popular_020.webp",
-        "name": "popular_020.webp",
-        "thumbUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/resources/100_popular/popular_020_preview.webp",
-        "contentType": "image/webp"
-      }
-    ],
-    "categoryId": "100_popular",
-    "isPremium": true,
-    "createdAt": 1766940414,
-    "subType": 0,
-    "type": 0,
-    "coinToUnlock": 0
-  },
-  {
     "id": "100_popular_001",
     "medias": [
       {
