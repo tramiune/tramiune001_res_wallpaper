@@ -6,16 +6,22 @@
     "createdAt": 1759307723
   },
   {
+    "id": "102_silly_smile",
+    "title": "Silly Smile",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_silly_smile.webp",
+    "createdAt": 1759307537
+  },
+  {
     "id": "101_anime",
     "title": "Anime",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_anime.webp",
     "createdAt": 1760608526
   },
   {
-    "id": "102_silly_smile",
-    "title": "Silly Smile",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_silly_smile.webp",
-    "createdAt": 1759307537
+    "id": "108_car",
+    "title": "Car",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_car.webp",
+    "createdAt": 1762490887
   },
   {
     "id": "103_super_hero",
@@ -48,12 +54,6 @@
     "createdAt": 1762490887
   },
   {
-    "id": "108_car",
-    "title": "Car",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_car.webp",
-    "createdAt": 1762490887
-  },
-  {
     "id": "109_double",
     "title": "Home - Lock Screen",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_double.webp",
@@ -63,12 +63,6 @@
     "id": "110_day",
     "title": "Day",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_day.webp",
-    "createdAt": 1762490887
-  },
-  {
-    "id": "111_christmas",
-    "title": "Christmas",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_christmas.webp",
     "createdAt": 1762490887
   },
   {
