@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": 1768312389,
+  "updatedAt": 1768312474,
   "categories": {
     "100_popular": {
       "order": [
@@ -183,6 +183,7 @@
         "102_silly_smile_011",
         "102_silly_smile_003",
         "102_silly_smile_017",
+        "102_silly_smile_012",
         "102_silly_smile_002",
         "102_silly_smile_001",
         "102_silly_smile_004",
@@ -190,7 +191,6 @@
         "102_silly_smile_006",
         "102_silly_smile_007",
         "102_silly_smile_009",
-        "102_silly_smile_012",
         "102_silly_smile_031",
         "102_silly_smile_010",
         "102_silly_smile_013",
@@ -218,7 +218,13 @@
         "102_silly_smile_008": true,
         "102_silly_smile_011": false,
         "102_silly_smile_017": false,
-        "102_silly_smile_018": false
+        "102_silly_smile_018": false,
+        "102_silly_smile_002": false,
+        "102_silly_smile_001": false,
+        "102_silly_smile_005": false,
+        "102_silly_smile_006": false,
+        "102_silly_smile_007": false,
+        "102_silly_smile_009": false
       },
       "coupleUsePreview": {}
     }
