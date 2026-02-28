@@ -6,16 +6,22 @@
     "createdAt": 1759307723
   },
   {
-    "id": "107_funny",
-    "title": "Funny",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_funny.webp",
-    "createdAt": 1762490887
-  },
-  {
     "id": "102_silly_smile",
     "title": "Silly Smile",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_silly_smile.webp",
     "createdAt": 1759307537
+  },
+  {
+    "id": "101_anime",
+    "title": "Anime",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_anime.webp",
+    "createdAt": 1760608526
+  },
+  {
+    "id": "107_funny",
+    "title": "Funny",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_funny.webp",
+    "createdAt": 1762490887
   },
   {
     "id": "105_animal",
@@ -40,12 +46,6 @@
     "title": "Super Hero",
     "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_super_hero.webp",
     "createdAt": 1762490887
-  },
-  {
-    "id": "101_anime",
-    "title": "Anime",
-    "imageUrl": "https://cdn.jsdelivr.net/gh/tramiune/tramiune001_res_wallpaper/app/src/main/assets/resources/category/cat_anime.webp",
-    "createdAt": 1760608526
   },
   {
     "id": "104_couple",
